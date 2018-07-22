@@ -1,0 +1,21 @@
+// Font
+	$font: (
+    family:				('Roboto', Helvetica, sans-serif),
+		family-cond:		('Roboto Condensed', Helvetica, sans-serif),
+		weight:						400,
+		weight-light:			 300,
+    style-italic:       italic
+	);
+
+// Palette.
+	$palette: (
+		bg:							#ffffff,
+		bg-alt:						#f4f4f4,
+		fg:							#646464,
+		fg-bold:					#3c3b3b,
+		fg-light:					#aaaaaa,
+		border:						rgba(160,160,160,0.3),
+		border-bg:					rgba(160,160,160,0.075),
+		border-alt:					rgba(160,160,160,0.65),
+		accent:						#2ebaae
+	);
