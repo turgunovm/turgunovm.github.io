@@ -40,15 +40,34 @@
   justify-content: center;
   margin-left: 100px;
   margin-top: 70px;
+
+  @include breakpoint(md-max) {
+    margin-left: 70px;
+  }
+
+  @include breakpoint(sm-max) {
+    margin-left: 0;
+  }
 }
 
 .masthead__headline {
   @include font-roboto;
   @include font-size(72px);
+  color: $primary;
   margin-bottom: 24px;
   font-weight: 300;
   line-height: 6rem;
   text-transform: uppercase;
+
+  @include breakpoint(md-max) {
+    @include font-size(48px);
+    line-height: 4rem;
+  }
+
+  @include breakpoint(sm-max) {
+    @include font-size(36px);
+    line-height: 3rem;
+  }
 }
 
 .masthead__subheadline {

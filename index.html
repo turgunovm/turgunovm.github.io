@@ -6,8 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/main.min.css">
   <title>Personal Website</title>
+  <script type="text/javascript">
+ function hideLoadingLayer(){
+ document.getElementById("loading_layer").style.visibility="hidden";
+ }
+ </script>
+ <style>
+ #loading_layer{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:999999;
+  background-color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+}
+#preloader {
+  height: 30px;
+  width: 30px;
+  margin: 40vh auto;
+  border: 2px solid rgba(21,21,21,0.45);
+  border-top: 2px solid rgb(21,21,21);
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ </style>
 </head>
-<body>
+<div id="loading_layer"><div id="preloader"></div></div>
+<body onload="hideLoadingLayer();">
 
   <!-- Wrapper -->
     <div class="wrapper">
