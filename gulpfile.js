@@ -3,6 +3,8 @@ var gulp         = require("gulp"),
     plumber      = require("gulp-plumber"),
     postcss      = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
+    minify       = require("gulp-csso"),
+    rename       = require("gulp-rename"),
     server       = require("browser-sync").create(),
     reload       = server.reload,
     mqpacker     = require("css-mqpacker"),
@@ -22,6 +24,9 @@ var gulp         = require("gulp"),
           }),
           mqpacker({ sort: true })
         ]))
+        .pipe(gulp.dest("assets/css"))
+        .pipe(minify())
+        .pipe(rename("main.min.css"))
         .pipe(gulp.dest("assets/css"))
         .pipe(reload({ stream: true }));
 

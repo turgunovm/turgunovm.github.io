@@ -1,7 +1,6 @@
-@import "base/base";
-@import "base/typography";
 @import "utils/mixins";
 @import "utils/vars";
+@import "base/reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300i,400');
 
 // Local font fallback
@@ -9,6 +8,9 @@
 @include font-face('Roboto', '../fonts/Roboto-LightItalic', 300, italic);
 @include font-face('RobotoCondensed', '../fonts/RobotoCondensed');
 
+// Base
+@import "base/base";
+@import "base/typography";
 
 // Layout
 @import "layout/header";

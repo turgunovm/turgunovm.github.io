@@ -1,0 +1,17 @@
+body {
+  @include font-roboto(14px);
+  border: 8px solid $primary;
+  padding:  60px 100px 0 100px;
+  height: 100vh;
+}
+
+.wrapper {
+  // background-color: cyan;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+
+  @include breakpoint(md-max) {
+    // width: 95%;
+  }
+}
