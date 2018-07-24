@@ -1,32 +1,30 @@
 body {
   @include font-roboto(14px);
-  border: 8px solid $primary;
-  padding:  60px 100px 0 100px;
+  border: 5px solid $primary;
+  padding-top:  60px;
   height: 100vh;
 
   @include breakpoint(md-max) {
-    padding: 60px 80px 0 80px;
-    border: 5px solid $primary;
+
   }
 
   @include breakpoint(sm-max) {
-    padding: 30px 40px 0 40px;
+    padding-top: 30px;
   }
 }
 
 .wrapper {
   // background-color: cyan;
   margin: 0 auto;
-  width: 100%;
+  width: calc(100vw - 200px);
   max-width: 1400px;
 
+
   @include breakpoint(md-max) {
-    width: 100%;
-    max-width: 768px;
+    width: calc(100vw - 150px);
   }
 
   @include breakpoint(sm-max) {
-    max-width: 320px;
+    width: calc(100vw - 80px) !important;
   }
-
 }
