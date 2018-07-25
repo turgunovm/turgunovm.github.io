@@ -1,3 +1,6 @@
+function hideLoadingLayer(){
+document.getElementById("loading_layer").style.visibility="hidden";
+}
 $(document).ready(function() {
 
   // $( window ).resize(function() {

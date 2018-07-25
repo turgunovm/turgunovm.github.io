@@ -1,0 +1,89 @@
+.projects {
+  margin-left: 7.92vw;
+}
+.projects__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 216px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.projects__desc {
+  flex: 0 1 30%;
+  min-width: 250px;
+  // margin-right: 5%;
+}
+
+.projects__title {
+  position: relative;
+
+  .projects__count {
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    color: rgba(21, 21, 21, 0.6);
+  }
+}
+
+.projects__pic {
+  flex: 0 0 60%;
+  min-width: 400px;
+}
+
+.projects__tag {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.projects__tag-item {
+  background-color: $lite-gray;
+  padding: 6px 8px;
+  height: 24px;
+  vertical-align: middle;
+  color: $primary-lighten;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 100%;
+
+  &:nth-child(1) {
+    margin-right: 8px;
+  }
+}
+
+.projects__text {
+  @include font-roboto;
+  @include font-size(14px);
+  line-height: 130%;
+  font-weight: normal;
+  color: $primary-lighten;
+  margin-bottom: 16px;
+}
+
+.projects__button {
+  @include font-roboto-cond;
+  padding: 8px 16px 7px;
+  background: $primary;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 2px;
+
+  &:nth-child(1) {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background: $black;
+  }
+}
+
+.projects__button-title {
+  margin-right: 6px;
+}

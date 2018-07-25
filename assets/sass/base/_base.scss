@@ -4,13 +4,21 @@ body {
   padding-top:  60px;
   height: 100vh;
 
-  @include breakpoint(md-max) {
-
-  }
-
   @include breakpoint(sm-max) {
     padding-top: 30px;
   }
+
+  @include breakpoint(md-max) {
+    padding-top: 40px;
+  }
+}
+
+*::selection {
+  background: $lite-gray; /* WebKit/Blink Browsers */
+}
+
+*::-moz-selection {
+  background: $lite-gray; /* Gecko Browsers */
 }
 
 .wrapper {
@@ -27,4 +35,12 @@ body {
   @include breakpoint(sm-max) {
     width: calc(100vw - 80px) !important;
   }
+}
+
+
+h2 {
+  @include font-roboto-cond;
+  font-weight: normal;
+  font-size: 62px;
+  text-transform: uppercase;
 }
