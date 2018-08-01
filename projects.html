@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/main.min.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+  </script>
   <title>Personal Website</title>
-  <script type="text/javascript">
- function hideLoadingLayer(){
- document.getElementById("loading_layer").style.visibility="hidden";
- }
- </script>
 </head>
 <div id="loading_layer"><div id="preloader"></div></div>
-<body onload="hideLoadingLayer();" style="height:auto;position:relative;">
+<body onload="hideLoadingLayer();" style="background: #fff;position:relative;">
 
   <div class="left">&nbsp;</div>
   <div class="center">&nbsp;</div>
@@ -34,33 +33,52 @@
               </a>
             </div>
 
-            <!-- E: Navigation -->
-              <nav class="header__nav nav">
-                <ul class="nav__list">
-                  <li class="nav__item nav__item--title">
-                    <a href="#" class="nav__link">
-                      Projects
-                    </a>
-                  </li>
-                  <li class="nav__item nav__item--hamburger">
-                    <a href="#" class="nav__link">
-                      <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="-1.1" x2="16" y2="-1.1" transform="translate(4 11)" stroke="black" stroke-width="2.2"/><line y1="-1.1" x2="20" y2="-1.1" transform="translate(0 3)" stroke="black" stroke-width="2.2"/>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <!-- B: Menu -->
+              <div class="menu">
+
+                <!-- E: Hamburger -->
+                  <a href="#" class="menu__link">
+                    <span class="menu__title">Projects</span>
+                    <div class="menu__hamb">
+                      <span class="menu__hamb-1"></span>
+                      <span class="menu__hamb-2"></span>
+                    </div>
+                  </a>
+
+                <!-- E: Navigation -->
+                  <nav class="nav">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="#">About</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="#">Blog</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="#">Contacts</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+              </div>
 
         </header>
 
       <!-- B: Headline -->
-        <section class="masthead" style="margin-bottom: 140px;">
-          <h1 class="masthead__headline">Works</h1>
-          <h3 class="masthead__subheadline">UX/UI Designer & Frontend<br> Developer</h3>
-        </section>
+        <!-- <div class="wrapper-inner">
+          <section class="masthead" style="margin-bottom: 140px;">
+            <h1 class="masthead__headline">Works</h1>
+            <h3 class="masthead__subheadline">Works, works, works..</h3>
+          </section>
+        </div> -->
+
 
       <!-- BB: Projects Section -->
         <section class="projects">
+          <div class="wrapper-inner">
 
           <!-- B: Project Item -->
             <div class="projects__item">
@@ -99,12 +117,13 @@
 
               <div class="projects__desc">
                 <div class="projects__title">
-                  <span class="projects__count">01</span>
-                  <h2 class="projects__name">Octoma</h2>
+                  <span class="projects__count">02</span>
+                  <h2 class="projects__name">UZSPCA</h2>
                 </div>
                 <div class="projects__tag">
                   <div class="projects__tag-item">Code</div>
                   <div class="projects__tag-item">Design</div>
+                  <div class="projects__tag-item">Deploy</div>
                 </div>
                 <div class="projects__text">
                   The data brought to us by the Bothan spies pinpoints the exact location of the Emperor's new battle station.
@@ -123,7 +142,7 @@
                 </div>
               </div>
               <div class="projects__pic">
-                <img src="images/projects/work-1.png" alt="">
+                <img src="images/projects/uzspca.png" alt="">
               </div>
             </div>
 
@@ -131,15 +150,15 @@
 
               <div class="projects__desc">
                 <div class="projects__title">
-                  <span class="projects__count">01</span>
-                  <h2 class="projects__name">Octoma</h2>
+                  <span class="projects__count">03</span>
+                  <h2 class="projects__name">Black<br> Bird Cl.</h2>
                 </div>
                 <div class="projects__tag">
                   <div class="projects__tag-item">Code</div>
-                  <div class="projects__tag-item">Design</div>
+                  <div class="projects__tag-item">Learning Project</div>
                 </div>
                 <div class="projects__text">
-                  The data brought to us by the Bothan spies pinpoints the exact location of the Emperor's new battle station.
+                  Coding learning project using pug/sass and jQuery.
                 </div>
                 <div class="projects__button-group">
                   <a href="#" class="projects__button">Case</a>
@@ -155,7 +174,7 @@
                 </div>
               </div>
               <div class="projects__pic">
-                <img src="images/projects/work-1.png" alt="">
+                <img src="images/projects/uzspca.png" alt="">
               </div>
             </div>
 
@@ -163,8 +182,8 @@
 
               <div class="projects__desc">
                 <div class="projects__title">
-                  <span class="projects__count">01</span>
-                  <h2 class="projects__name">Octoma</h2>
+                  <span class="projects__count">04</span>
+                  <h2 class="projects__name">Valley<br> Fruits</h2>
                 </div>
                 <div class="projects__tag">
                   <div class="projects__tag-item">Code</div>
@@ -191,11 +210,19 @@
               </div>
             </div>
 
+          </div>
         </div>
+
     </div>
 
+  <script>
+    sr.reveal('.projects__item', {
+      duration: 500,
+      delay: 0,
+      reset: false});
+  </script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
   <script src="assets/js/common.js"></script>
 </body>
 </html>

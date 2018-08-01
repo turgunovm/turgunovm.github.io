@@ -1,15 +1,12 @@
 body {
   @include font-roboto(14px);
-  border: 5px solid $primary;
+  // border: 4px solid $primary;
   padding-top:  60px;
-  height: 100vh;
+  background-color: #f6f6f6; //#e6e6d4; //#fbd685;
+  // height: 100vh;
 
   @include breakpoint(sm-max) {
     padding-top: 30px;
-  }
-
-  @include breakpoint(md-max) {
-    padding-top: 40px;
   }
 }
 
@@ -22,21 +19,19 @@ body {
 }
 
 .wrapper {
-  // background-color: cyan;
   margin: 0 auto;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 15%);
   max-width: 1400px;
-
-
-  @include breakpoint(md-max) {
-    width: calc(100vw - 150px);
-  }
-
-  @include breakpoint(sm-max) {
-    width: calc(100vw - 80px) !important;
-  }
 }
 
+.wrapper-inner {
+  margin: 0 auto;
+  width: 72vw;
+
+  @include breakpoint(sm-max) {
+    width: auto;
+  }
+}
 
 h2 {
   @include font-roboto-cond;

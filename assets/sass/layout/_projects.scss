@@ -1,5 +1,18 @@
+@keyframe fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .projects {
-  margin-left: 7.92vw;
+  animation: fadeUp 1s;
+  // margin-left: 7.92vw;
+  // background-color: #fff;
 }
 .projects__item {
   display: flex;
@@ -32,7 +45,7 @@
 
 .projects__pic {
   flex: 0 0 60%;
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .projects__tag {
@@ -49,10 +62,7 @@
   display: inline-block;
   border-radius: 2px;
   line-height: 100%;
-
-  &:nth-child(1) {
-    margin-right: 8px;
-  }
+  margin-right: 8px;
 }
 
 .projects__text {
@@ -74,10 +84,7 @@
   color: $white;
   text-transform: uppercase;
   border-radius: 2px;
-
-  &:nth-child(1) {
-    margin-right: 16px;
-  }
+  margin-right: 16px;
 
   &:hover {
     background: $black;

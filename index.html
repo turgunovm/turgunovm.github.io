@@ -25,30 +25,46 @@
               </a>
             </div>
 
-            <!-- E: Navigation -->
-              <nav class="header__nav nav">
-                <ul class="nav__list">
-                  <li class="nav__item nav__item--title">
-                    <a href="#" class="nav__link">
-                      Home
-                    </a>
-                  </li>
-                  <li class="nav__item nav__item--hamburger">
-                    <a href="#" class="nav__link">
-                      <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="-1.1" x2="16" y2="-1.1" transform="translate(4 11)" stroke="black" stroke-width="2.2"/><line y1="-1.1" x2="20" y2="-1.1" transform="translate(0 3)" stroke="black" stroke-width="2.2"/>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <!-- B: Menu -->
+              <div class="menu">
+
+                <!-- E: Hamburger -->
+                  <a href="#nav" class="menu__link">
+                    <span class="menu__title">Home</span>
+                    <div class="menu__hamb">
+                      <span class="menu__hamb-1"></span>
+                      <span class="menu__hamb-2"></span>
+                    </div>
+                  </a>
+
+                <!-- E: Navigation -->
+                  <nav id="nav" class="nav">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="#">About</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="projects.html">Projects</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="https://medium.com/@turgunovm/" target="_blank" onclick="return popUnder(this);">Blog</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__item-link" href="#">Contacts</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+              </div>
 
         </header>
 
       <!-- B: Headline -->
+      <div class="wrapper-inner">
         <section class="masthead">
 
-          <h1 class="masthead__headline">Hey,<br> I'm Muhiddin</h1>
-          <h3 class="masthead__subheadline">UX/UI Designer & Frontend<br> Developer</h3>
+          <h1 class="masthead__headline">Hey,<br>I'm <span class="typed"><strong>Developer</strong></span></h1>
+          <h3 class="masthead__subheadline">UX/UI Designer &<br> Frontend Developer</h3>
 
           <!-- E: Social icons -->
             <div class="masthead__social">
@@ -85,11 +101,13 @@
             </div>
 
         </section>
+      </div>
 
     </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="assets/js/vendor/typed.min.js"></script>
   <script src="assets/js/common.js"></script>
 </body>
 </html>
