@@ -81,6 +81,14 @@ table {
 }
 
 @font-face {
+  font-family: "Operator SSm";
+  src: url("../fonts/OperatorSSm/OperatorSSm-LightItalic.eot");
+  src: url("../fonts/OperatorSSm/OperatorSSm-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.woff") format("woff"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.svg#Operator SSm") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.eot");
   src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Regular.svg#Roboto") format("svg");
