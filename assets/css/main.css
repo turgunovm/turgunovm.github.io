@@ -81,9 +81,9 @@ table {
 }
 
 @font-face {
-  font-family: "Operator SSm";
+  font-family: "Operator Mono";
   src: url("../fonts/OperatorSSm/OperatorMono-LightItalic.eot");
-  src: url("../fonts/OperatorSSm/OperatorMono-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.woff") format("woff"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.svg#Operator SSm") format("svg");
+  src: url("../fonts/OperatorSSm/OperatorMono-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.woff") format("woff"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.svg#Operator Mono") format("svg");
   font-weight: 300;
   font-style: italic;
 }
