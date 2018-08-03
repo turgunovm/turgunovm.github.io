@@ -13,7 +13,7 @@ $('.menu__link').on('click', function(e) {
 });
 
 var typed = new Typed('.typed', {
-    strings: [' ', '<strong>Designer</strong>', '<strong>Muhiddin</strong>'],
+    strings: [' ', '<strong>Developer</strong>', '<strong>Muhiddin</strong>'],
     typeSpeed: 100,
 		startDelay: 1000,
 		cursorChar: '_',

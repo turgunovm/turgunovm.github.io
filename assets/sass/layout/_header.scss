@@ -185,7 +185,7 @@
   line-height: 110%;
 
   .typed {
-    font-weight: 400;
+    font-weight: bold;
   }
   @include breakpoint(sm-max) {
     @include font-size(24px);
@@ -260,8 +260,21 @@
       fill: #2C00DA;
     }
   }
+}
 
+.hire {
+  @include font-roboto-cond;
+  font-weight: 300;
+  @include font-size(16px);
+  color: $primary-lighten;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 40px;
+}
 
+.hire__link {
+  color: $primary;
+  text-decoration: none;
 }
 
 .left {

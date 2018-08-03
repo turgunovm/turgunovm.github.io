@@ -49,34 +49,57 @@ table {
 }
 
 @font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Regular.eot");
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.svg#Roboto Condensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Operator SSm";
+  src: url("../fonts/OperatorSSm/OperatorSSm-Book.eot");
+  src: url("../fonts/OperatorSSm/OperatorSSm-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorSSm-Book.woff") format("woff"), url("../fonts/OperatorSSm/OperatorSSm-Book.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorSSm-Book.svg#Operator SSm") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Operator SSm";
+  src: url("../fonts/OperatorSSm/OperatorSSm-Light.eot");
+  src: url("../fonts/OperatorSSm/OperatorSSm-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorSSm-Light.woff") format("woff"), url("../fonts/OperatorSSm/OperatorSSm-Light.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorSSm-Light.svg#Operator SSm") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Operator SSm";
+  src: url("../fonts/OperatorSSm/OperatorSSm-Bold.eot");
+  src: url("../fonts/OperatorSSm/OperatorSSm-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorSSm-Bold.woff") format("woff"), url("../fonts/OperatorSSm/OperatorSSm-Bold.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorSSm-Bold.svg#Operator SSm") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto.eot");
-  src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype"), url("../fonts/Roboto.svg#Roboto") format("svg");
+  src: url("../fonts/Roboto/Roboto-Regular.eot");
+  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Regular.svg#Roboto") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-LightItalic.eot");
-  src: url("../fonts/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-LightItalic.woff") format("woff"), url("../fonts/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/Roboto-LightItalic.svg#Roboto") format("svg");
+  src: url("../fonts/Roboto/Roboto-LightItalic.eot");
+  src: url("../fonts/Roboto/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-LightItalic.woff") format("woff"), url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/Roboto/Roboto-LightItalic.svg#Roboto") format("svg");
   font-weight: 300;
   font-style: italic;
-}
-
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed.eot");
-  src: url("../fonts/RobotoCondensed.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed.woff") format("woff"), url("../fonts/RobotoCondensed.ttf") format("truetype"), url("../fonts/RobotoCondensed.svg#RobotoCondensed") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   padding-top: 60px;
-  background-color: #f6f6f6;
 }
 
 *::-moz-selection {
@@ -370,7 +393,7 @@ h2 {
 }
 
 .masthead__headline .typed {
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .masthead__subheadline {
@@ -424,6 +447,22 @@ h2 {
 
 .masthead__social-link:hover svg * {
   fill: #2C00DA;
+}
+
+.hire {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  color: rgba(21, 21, 21, 0.7);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 40px;
+}
+
+.hire__link {
+  color: #151515;
+  text-decoration: none;
 }
 
 .left {
