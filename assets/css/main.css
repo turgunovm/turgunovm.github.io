@@ -82,8 +82,8 @@ table {
 
 @font-face {
   font-family: "Operator SSm";
-  src: url("../fonts/OperatorSSm/OperatorSSm-LightItalic.eot");
-  src: url("../fonts/OperatorSSm/OperatorSSm-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.woff") format("woff"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorSSm-LightItalic.svg#Operator SSm") format("svg");
+  src: url("../fonts/OperatorSSm/OperatorMono-LightItalic.eot");
+  src: url("../fonts/OperatorSSm/OperatorMono-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.woff") format("woff"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.ttf") format("truetype"), url("../fonts/OperatorSSm/OperatorMono-LightItalic.svg#Operator SSm") format("svg");
   font-weight: 300;
   font-style: italic;
 }

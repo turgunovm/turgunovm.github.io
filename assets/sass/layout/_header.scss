@@ -196,15 +196,12 @@
 }
 
 .masthead__subheadline {
-  // @include font-roboto;
   font-family: "Operator Mono", serif;
   @include font-size(28px);
-  // font-size: 2.63vw;
   color: $primary-lighten;
   font-style: italic;
   font-weight: 300;
   margin-bottom: 48px;
-  // margin-bottom: 3.51vw;
   line-height: 110%;
 
   &::before {
