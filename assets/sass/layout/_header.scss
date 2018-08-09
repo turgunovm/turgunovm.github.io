@@ -134,49 +134,14 @@
 	}
 }
 
-/*
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-}
-
-.nav__item--title {
-  @include font-roboto-cond(18px, $black);
-  margin-top: -2px;
-
-  .nav__link {
-    color: inherit;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  @include breakpoint(sm-max) {
-    display: none;
-  }
-}
-
-.nav__item--hamburger {
-  margin-left: 32px;
-
-  @include breakpoint(sm-max) {
-    margin-left: 18px;
-  }
-}
-*/
 .masthead {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
-  // margin-left: 7.32vw;
-  // margin-bottom: 70px;
-  // height: 80vh;
+  position: relative;
 }
 
 .masthead__headline {
-  // @include font-roboto-cond;
   font-family: "Operator SSm";
   @include font-size(48px);
   color: $primary;
@@ -187,11 +152,16 @@
   .typed {
     font-weight: bold;
   }
+
+  @include breakpoint(md-max) {
+    @include font-size(36px);
+    font-size: 7.65vw;
+  }
+
   @include breakpoint(sm-max) {
     @include font-size(24px);
     font-size: 7.82vw;
     margin-bottom: 12px;
-
   }
 }
 
@@ -214,6 +184,11 @@
     content: " -->";
     color: rgba(21, 21, 21, 0.3);
     cursor: text;
+  }
+
+  @include breakpoint(md-max) {
+    @include font-size(24px);
+    font-size: 3.82vw;
   }
 
   @include breakpoint(sm-max) {
@@ -254,7 +229,7 @@
 
   &:hover {
     svg * {
-      fill: #2C00DA;
+      fill: $black;
     }
   }
 }
@@ -266,12 +241,16 @@
   color: $primary-lighten;
   text-transform: uppercase;
   position: absolute;
-  bottom: 40px;
+  bottom: -150px;
 }
 
 .hire__link {
   color: $primary;
   text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
 }
 
 .left {
@@ -280,7 +259,7 @@
   position:absolute;
   top:0;
   bottom:0;
-  right: 200px;
+  left: 24vh;
   z-index: -10;
 }
 .center {
@@ -289,7 +268,7 @@
   position:absolute;
   top:0;
   bottom:0;
-  right: 500px;
+  right: 50vw;
   z-index: -10;
 }
 .right {
@@ -298,6 +277,6 @@
   position:absolute;
   top:0;
   bottom:0;
-  right:800px;
+  right:24vh;
   z-index: -10;
 }

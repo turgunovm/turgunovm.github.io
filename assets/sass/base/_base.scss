@@ -1,9 +1,6 @@
 body {
   @include font-roboto(14px);
-  // border: 4px solid $primary;
   padding-top:  60px;
-  // background-color: #f6f6f6; //#e6e6d4; //#fbd685;
-  // height: 100vh;
 
   @include breakpoint(sm-max) {
     padding-top: 30px;
@@ -16,6 +13,28 @@ body {
 
 *::-moz-selection {
   background: $lite-gray; /* Gecko Browsers */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    // background: $primary-lighten;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(21,21,21,.3);
+    transition: all 200ms ease-in;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: all 200ms ease-in;
+  background: $primary;
 }
 
 .wrapper {
@@ -34,7 +53,7 @@ body {
 }
 
 h2 {
-  @include font-roboto-cond;
+  // @include font-roboto-cond;
   font-weight: normal;
   font-size: 62px;
   text-transform: uppercase;

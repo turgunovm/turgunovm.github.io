@@ -11,8 +11,6 @@
 
 .projects {
   animation: fadeUp 1s;
-  // margin-left: 7.92vw;
-  // background-color: #fff;
 }
 .projects__item {
   display: flex;
@@ -34,18 +32,26 @@
 
 .projects__title {
   position: relative;
+  font-family: "Operator SSm";
+  font-weight: normal;
 
   .projects__count {
     position: absolute;
     top: 8px;
-    left: -18px;
-    color: rgba(21, 21, 21, 0.6);
+    left: -25px;
+    color: rgba(21, 21, 21, 0.3);
   }
 }
 
 .projects__pic {
   flex: 0 0 60%;
   min-width: 300px;
+  pointer-events: none;
+
+  img {
+    max-width: 630px;
+    max-height: 400px;
+  }
 }
 
 .projects__tag {
@@ -88,6 +94,10 @@
 
   &:hover {
     background: $black;
+  }
+
+  &:nth-child(1) {
+    cursor: not-allowed;
   }
 }
 
