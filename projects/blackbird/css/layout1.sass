@@ -1,0 +1,192 @@
+// Base Styles
+
+body
+	font-family: "Open Sans", sans-serif
+
+h1
+	color: #ccc
+	weight: 300
+
+figure
+	margin: auto
+
+.content
+	position: relative
+	background: white
+	overflow: hidden
+	z-index: 2
+	margin-bottom: 400px
+
+	article
+		padding: 40px 0
+		max-width: 640px
+		margin: 0 auto
+		text-align: center
+
+img
+	max-width: 100%
+
+// Parallax
+
+.bird-box
+	position: relative
+	height: 600px
+	overflow: hidden
+	z-index: 3
+	background:
+		image: url(../images/bird-bg.jpg)
+		size: auto 600px
+		position: top center
+		attachment: fixed
+
+.logo
+	height: 100px
+	width: 100%
+	background:
+		image: url(../images/black-bird-logo.svg)
+		position: center
+		repeat: no-repeat
+	position: absolute
+	top: 50%
+	margin-top: -50px
+
+.fore-bird
+	width: 960px
+	height: 733px
+	background:
+		// color: transparentize(pink, .4)
+		image: url(../images/fore-bird.png)
+		repeat: no-repeat
+		position: right bottom
+	position: absolute
+	left: 50%
+	top: 380px
+	margin-left: -480px
+
+.back-bird
+	width: 960px
+	height: 298px
+	background:
+		image: url(../images/back-bird.png)
+		repeat: no-repeat
+		position: top left
+		// color: transparentize(pink, .4)
+	position: absolute
+	left: 50%
+	margin-left: -480px
+
+
+// Model Grid
+
+.clothes-pics
+	margin-bottom: 100px
+	figure
+		margin-bottom: 20px
+		position: relative
+		opacity: 0
+		transform: translateX(20px)
+		transition: all 0.3s ease-in-out
+		overflow: hidden
+		cursor: pointer
+		&.is-showing
+			opacity: 1
+			transform: translateX(0px)
+		img
+			display: block
+			transform: scale(1)
+			transition: all 0.3s ease-in-out
+		&:hover
+			figcaption
+				left: 0%
+			img
+				transform: scale(1.1)
+	figcaption
+		position: absolute
+		bottom: 10px
+		left: -100%
+		color: #fff
+		background: #000
+		padding: 2px 8px
+		font-size: 11px
+		transition: all .3s ease-in-out
+
+
+// large-window
+
+.large-window
+	height: 640px
+	border-radius: 50%
+	background:
+		image: url(../images/model2.jpg)
+		position: top center
+		repeat: repeat-y
+		attachment: fixed
+	position: relative
+	margin-bottom: 100px
+	.window-tint
+		background-color: rgba(0,0,0,.5)
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+	.promo-text
+		color: #fff
+		font-weight: 100
+		font-size: 50px
+		line-height: 1.2
+		strong
+			display: block
+			font-size: 30px
+		span
+			font-weight: 300
+			font-size: 18 
+			font-style: italic
+			color: rgba(255,255,255, .6)
+		.window-cta
+			font-size: 20px
+			text-decoration: none
+			color: #fff
+			border: 1px solid #fff
+			padding: 10px 12px
+			transition: all 0.3s ease-in-out
+			&:hover
+				background: #fff
+				color: #000
+
+// Posts
+
+.blog-posts
+	margin: 100px 0
+	.post
+		border: 1px solid #e1e1e1
+		padding: 20px 20px 0
+		background: #fff
+		position: relative
+	.post-1
+		// transform: translate(100px, 20px)
+	.post-2
+		z-index: 2
+	.post-3
+		// transform: translate(-100px, 20px)
+
+// Footer
+
+footer
+	background: #000
+	color: #fff
+	padding: 40px 0
+	position: fixed
+	bottom: 0
+	width: 100%
+	.footer-stuff
+		width: 640px
+		margin: 0 auto
+	a
+		color: #fff
+	input[type="email"]
+		color: #000

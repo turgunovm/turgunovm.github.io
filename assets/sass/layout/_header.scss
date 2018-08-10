@@ -132,6 +132,10 @@
 	&:hover {
 		color: #000;
 	}
+
+  &[href="#"] {
+    cursor: not-allowed;
+  }
 }
 
 .masthead {

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SF-UI-Text-Medium';
+  src: url('SF-UI-Text-Medium.eot');
+  src: url('SF-UI-Text-Medium.woff2') format('woff2'),
+       url('SF-UI-Text-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText-Medium';
+  src: url('SFUIText-Medium.woff') format('woff'),
+       url('SFUIText-Medium.ttf') format('truetype'),
+       url('SFUIText-Medium.svg#SFUIText-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

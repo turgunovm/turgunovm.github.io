@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: url("../fonts/galano-grotesque/GalanoGrotesque-Bold.eot");
+  src: url("../fonts/galano-grotesque/GalanoGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/galano-grotesque/GalanoGrotesque-Bold.woff2") format("woff2"), url("../fonts/galano-grotesque/GalanoGrotesque-Bold.woff") format("woff"), url("../fonts/galano-grotesque/GalanoGrotesque-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Medium';
+  src: url("../fonts/san-francisco/SF-UI-Text-Medium.eot");
+  src: url("../fonts/san-francisco/SF-UI-Text-Medium.woff2") format("woff2"), url("../fonts/san-francisco/SF-UI-Text-Medium.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText-Medium';
+  src: url("../fonts/san-francisco/SFUIText-Medium.woff") format("woff"), url("../fonts/san-francisco/SFUIText-Medium.ttf") format("truetype"), url("../fonts/san-francisco/SFUIText-Medium.svg#SFUIText-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "GalanoGrotesque", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper_inner {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #0a0809 url("../img/moon-edit.png") no-repeat right bottom;
+  color: #fff;
+}
+
+.header {
+  height: 130px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 47px;
+  height: auto;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav-item {
+  margin-left: 60px;
+  font-size: 1em;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
+.header__nav-item:nth-child(1) .header__nav-link:hover {
+  color: #ea4c89;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header__nav-item:nth-child(2) .header__nav-link:hover {
+  color: #1769ff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header__nav-item:nth-child(3) .header__nav-link:hover {
+  color: #bc2a8d;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header__nav-item:nth-child(4) .header__nav-link:hover {
+  color: #3b5998;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header__nav-link {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.masthead {
+  margin-left: 9%;
+  margin-top: 140px;
+  padding-bottom: 170px;
+}
+
+.masthead__top {
+  font-size: .9em;
+  font-weight: normal;
+}
+
+.masthead__heading {
+  font-size: 4em;
+  line-height: 1.2em;
+  margin-top: 1.4em;
+  letter-spacing: -.01em;
+  margin-bottom: .8em;
+}
+
+.masthead__subheading {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: -.01em;
+  margin-bottom: 90px;
+}
+
+.masthead__button {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 32px 82px -12px black;
+  box-shadow: 0px 32px 82px -12px black;
+  color: #0a0809;
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: .16em;
+}
+
+.about {
+  background: #fff url(../img/white-moon.png) no-repeat right top;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.about__title {
+  margin-top: -10px;
+  margin-bottom: 60px;
+  font-size: 4.26vw;
+  letter-spacing: .02em;
+  word-wrap: nowrap;
+}
+
+.about__text {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.about__paragraph {
+  font-family: "SF-UI-Text-Medium", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.about__img-self {
+  height: auto;
+}
+
+.contact {
+  background: #fff url("../img/white-moon.png") no-repeat right bottom;
+  padding: 300px 0 200px;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.contact__heading {
+  font-size: 4.26vw;
+  letter-spacing: .02em;
+  margin-right: 5%;
+  margin-top: -12px;
+}
+
+.contact__paragraph {
+  font-family: "SF-UI-Text-Medium", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 2em;
+}
+
+.contact__button-link {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 32px 82px -12px black;
+  box-shadow: 0px 32px 82px -12px black;
+  color: #fff;
+  background: #0a0809;
+  padding: 20px 70px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: .16em;
+}
+
+.works {
+  background: #0a0809;
+  color: #fff;
+}
+
+.works__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.works__box {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.works__box--first {
+  background: #c93d1b url("../img/recent.png") no-repeat center center;
+  background-size: cover;
+}
+
+.works__box--second {
+  background-color: #35d0ba;
+}
+
+.works__box--third {
+  background-color: #f8c43a;
+}
+
+.works__box--fourth {
+  background-color: #455d7a;
+}
+
+.works__box-has-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.works__item {
+  background-color: #ccc;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.works__item img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  color: #fff;
+  background: #0a0809;
+  font-family: "SF-UI-Text-Medium", sans-serif;
+  font-size: .9em;
+  padding: 100px 0;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  margin-bottom: 60px;
+}
+
+.footer__email {
+  display: block;
+  margin-bottom: 15px;
+  color: #717171;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__email:hover {
+  color: #fff;
+}
+
+.footer__phone {
+  display: block;
+  color: #717171;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__phone:hover {
+  color: #fff;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__nav-item {
+  margin-left: 35px;
+}
+
+.footer__nav-item:nth-child(1) .footer__nav-link:hover {
+  color: #ea4c89;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__nav-item:nth-child(2) .footer__nav-link:hover {
+  color: #1769ff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__nav-item:nth-child(3) .footer__nav-link:hover {
+  color: #bc2a8d;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__nav-item:nth-child(4) .footer__nav-link:hover {
+  color: #3b5998;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer__nav-link {
+  color: #fff;
+}
